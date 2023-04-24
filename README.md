@@ -12,7 +12,7 @@ SASS/SCSS Landing Page
 
 
 ### Links
-
+https://priskinzsuzsanna.github.io/SASS-SCSS-Landing-Page/
 
 ### Screenshot
 ![blue](https://user-images.githubusercontent.com/121173949/234127367-dede6e92-7cd6-4764-9473-41b8382e3579.png)
