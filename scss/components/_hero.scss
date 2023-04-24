@@ -1,0 +1,49 @@
+
+
+.hero {
+    height: 100vh;
+    background: url('../mobile-bg.jpg') no-repeat center/cover;
+    position: relative;
+    
+    .container {
+        color: set-hero-color($light-secondary-color);
+        text-align: center;
+        z-index: 2;
+        .sm-block-lg-flex-small {
+            width: 100%;
+
+            .btn-img {
+                padding-block: $button-equal-width-padding-block;
+                padding-inline: 0;
+                width: $button-equal-width-inline-size;
+
+                @include tablet{
+                    width: $button-equal-width-inline-size-small;
+                }
+                
+            }
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset:0;
+        @include set-hero-background($light-secondary-color-opace);
+        z-index: 0;
+    }
+}
+
+body.dark .hero {
+
+    .container {
+        color: set-dark-color($dark-primary-color);
+        transition: $transition;
+    }
+
+    &::after {
+        @include set-dark-background($dark-primary-color-opace);
+        transition: $transition;
+    }
+}
+

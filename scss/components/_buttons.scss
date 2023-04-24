@@ -1,0 +1,59 @@
+%btn {
+    outline: none;
+    cursor: pointer;
+    background: none;
+
+    &:hover {
+        transform: scale(1.04);
+        transition: $transition;
+    }
+}
+
+.btn {
+    @extend %btn;
+}
+
+.btn-img {
+    @extend %btn;
+    border: 1px solid set-hero-color($light-secondary-color);
+    color: set-hero-color($light-secondary-color);
+    transition: $transition;
+
+    &:hover {
+        border:none;
+        @include set-hero-background($dark-primary-color);
+        color: set-hero-color($dark-primary-color);
+    }
+}
+
+body.dark .btn-img {
+    border: 1px solid set-hero-color($dark-primary-color);
+    color: set-hero-color($dark-primary-color);
+
+    &:hover {
+        border:none;
+        @include set-hero-background($light-secondary-color);
+        color: set-hero-color($light-secondary-color);
+    }
+}
+
+.btn-toggle {
+    @extend %btn;
+    border: none;
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: $border-radius-circle;
+    border: 1px solid set-color($dark-primary-color);
+    color: set-color($dark-primary-color);
+    transition: $transition;
+   
+
+    i {
+        font-size: $font-laptop;
+        pointer-events: none;
+    }
+
+}
+
+

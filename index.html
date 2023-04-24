@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <!--Style-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>SCSS</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h2>Logo</h2>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger display-flex-row">
+                    <button class="btn-toggle toggle">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <i class="fa-solid fa-bars" id="menu"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero display-flex-column" id="home">
+
+            <div class="container display-flex-column">
+                <h1>Blue Mountain Lake</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error quisquam ratione illum recusandae!
+                    Molestiae est velit dolore, culpa ipsum, repellendus soluta in iure inventore eius tempore magnam
+                    corrupti fugit fugiat autem. Amet eos facere rerum tempora laudantium placeat corrupti delectus
+                    dolore ad sit? Optio illum iste praesentium esse corrupti commodi. Nihil aliquam voluptas sequi
+                    asperiores quis optio maxime. Fugit, neque.</p>
+                <div class="sm-block-lg-flex-small">
+                    <button class="btn-img">Book Now</button>
+                    <button class="btn-img">About Us</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="about" id="about">
+            <div class="container display-flex-column">
+                <h2>About</h2>
+                <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste omnis
+                    voluptatibus eaque officia adipisci eos laborum tenetur iure voluptatum, modi doloremque vitae
+                    incidunt beatae atque quisquam hic! In voluptatem ducimus ex beatae neque quaerat odio dignissimos
+                    voluptates eveniet unde vitae fuga ut possimus adipisci repellendus nihil, soluta est sequi deserunt
+                    nulla. Quaerat quidem qui, corporis molestiae voluptas aspernatur laudantium expedita alias quos.
+                    Dolorum excepturi sed laborum! Hic laboriosam repudiandae quia consectetur voluptatem obcaecati,
+                    tempore totam aut veniam quasi. Similique ex eum placeat sit dignissimos quas totam ducimus
+                    necessitatibus officia aspernatur. Perspiciatis ducimus quisquam aspernatur maxime ipsam doloribus
+                    reprehenderit non quis officiis accusamus provident nemo, corrupti odio veritatis optio consectetur
+                    accusantium rerum quia sed esse, harum quaerat error. Quidem sapiente cum necessitatibus vero
+                    eligendi, animi illum expedita et cumque, quos maxime!</p>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container display-flex-column">
+                <h2>Services</h2>
+                <div class="sm-block-lg-flex">
+                    <div class="card display-flex-column text-justify">
+                        <h3 class="card-title">Service 1</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, quas? Officia ab
+                            incidunt quod reprehenderit accusamus! Culpa, molestiae vel? Magni nemo molestiae ad fuga
+                            maiores reiciendis mollitia et. Deserunt mollitia totam quia iusto a pariatur earum animi,
+                            temporibus harum quae.</p>
+                        <button class="btn">Read more</button>
+                    </div>
+                    <div class="card display-flex-column text-justify">
+                        <h3 class="card-title">Service 2</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, quas? Officia ab
+                            incidunt quod reprehenderit accusamus! Culpa, molestiae vel? Magni nemo molestiae ad fuga
+                            maiores reiciendis mollitia et. Deserunt mollitia totam quia iusto a pariatur earum animi,
+                            temporibus harum quae.</p>
+                        <button class="btn">Read more</button>
+                    </div>
+                    <div class="card display-flex-column text-justify">
+                        <h3 class="card-title">Service 3</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, quas? Officia ab
+                            incidunt quod reprehenderit accusamus! Culpa, molestiae vel? Magni nemo molestiae ad fuga
+                            maiores reiciendis mollitia et. Deserunt mollitia totam quia iusto a pariatur earum animi,
+                            temporibus harum quae.</p>
+                        <button class="btn">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container display-flex-column">
+                <h2>Contact</h2>
+                <form class="display-flex-column">
+                    <div class="display-flex-column-sm">
+                        <label for="">Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="display-flex-column-sm">
+                        <label for="">Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="display-flex-column-sm">
+                        <label for="">Message</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                    <div class="display-flex-column-sm">
+                        <button class="btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container display-flex-column">
+            <h3>Copyright &copy; 2023 Blue Lake Mountain</h3>
+            <div class="social display-flex-row">
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+.about {
+    @include set-background($light-secondary-color);
+}
+
+body.dark .about {
+    @include set-dark-background($dark-secondary-color);
+}

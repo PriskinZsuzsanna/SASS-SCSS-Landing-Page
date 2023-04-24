@@ -1,0 +1,61 @@
+.contact {
+    @include set-background($light-secondary-color);
+
+    form {
+        width: 100%;
+        max-width: 700px;
+    
+        .display-flex-column-sm {
+            width: 100%;
+    
+            input {
+                width: 100%;
+                border: 1px solid set-color($light-secondary-color);
+                padding:  0.5rem 1rem;
+                outline: none;
+            }
+    
+            label {
+                width: 100%;
+            }
+    
+            textarea {
+                width: 100%;
+                border: 1px solid set-color($light-secondary-color);
+                padding: 1rem;
+                outline: none;
+                height: 160px;
+                resize: none;
+            }
+    
+            button {
+                border: 1px solid set-color($light-white-color);
+                @include set-background($light-white-color);
+                color:  set-color($light-white-color);
+                padding: $small-button-padding;
+                margin-top: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+body.dark .contact {
+    @include set-dark-background($dark-secondary-color);
+
+    input {
+        border: 1px solid set-dark-color($dark-secondary-color);
+        @include set-background($light-white-color);
+    }
+    textarea {
+        border: 1px solid set-dark-color($dark-secondary-color);
+        @include set-background($light-white-color);
+    }
+
+    button {
+        border: 1px solid set-dark-color($dark-secondary-color);
+        @include set-background($light-white-color);
+        color:  set-dark-color($light-white-color);
+    }
+}
+

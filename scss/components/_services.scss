@@ -1,0 +1,64 @@
+.services {
+    width: 100%;
+    @include set-background($light-white-color);
+
+    .card:nth-of-type(1) {
+        @include set-background($light-primary-color);
+        padding: 2rem;
+
+        .btn {
+            border: 1px solid set-color($light-primary-color);
+            color: set-color($light-primary-color);
+            padding: $small-button-padding;
+        }
+    }
+    .card:nth-of-type(2) {
+        border: 1px solid set-color($light-white-color);
+        padding: 2rem;
+
+        .btn {
+            border: 1px solid set-color($light-white-color);
+            color: set-color($light-white-color);
+            padding: $small-button-padding;
+        }
+    }
+    .card:nth-of-type(3) {
+        @include set-background($light-primary-color);
+        padding: 2rem;
+
+        .btn {
+            border: 1px solid set-color($light-primary-color);
+            color: set-color($light-primary-color);
+            padding: $small-button-padding;
+        }
+    }
+}
+
+body.dark .services {
+    @include set-background($light-white-color);
+    color: set-dark-color($light-white-color);
+
+    .card:nth-of-type(1) {
+        @include set-dark-background($dark-primary-color);
+
+        .btn {
+            border: 1px solid set-dark-color($dark-primary-color);
+            color: set-dark-color($dark-primary-color);
+        }
+    }
+    .card:nth-of-type(2) {
+        border: 1px solid set-dark-color($light-white-color);
+
+        .btn {
+            border: 1px solid set-dark-color($light-white-color);
+            color: set-dark-color($light-white-color);
+        }
+    }
+    .card:nth-of-type(3) {
+        @include set-dark-background($dark-primary-color);
+        .btn {
+            border: 1px solid set-dark-color($dark-primary-color);
+            color: set-dark-color($dark-primary-color);
+        }
+    }
+}

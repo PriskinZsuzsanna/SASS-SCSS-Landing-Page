@@ -1,0 +1,49 @@
+//-----------colors
+
+//body.light
+$light-primary-color:  #284fa4;
+$light-primary-color-opace:  #2756bbde;
+$light-secondary-color:  #bbccf2;
+$light-secondary-color-opace:  #bbccf2c7;
+
+//body.dark
+$dark-primary-color:  #1c2f57;
+$dark-primary-color-opace:  #1c2f57b4;
+$dark-secondary-color:  #3e4d6c;
+
+//white
+$light-white-color:  #dfe7f9;
+$dark-white-color:  #8ea3cd41;
+
+
+//------------paddings
+
+$fix-nav-padding: 50px;
+$inline-padding-sm: 3%;
+$inline-padding: 5%;
+$block-padding: calc(2rem + $fix-nav-padding) 3rem;
+
+$small-button-padding: 0.5rem 2rem;
+$button-padding: 1rem 3rem;
+$button-equal-width-inline-size: 65%;
+$button-equal-width-inline-size-small: 30%;
+$button-equal-width-padding-block: .7rem;
+
+
+//fonts
+$font-sm-mobile: .8rem;
+$font-mobile: .9rem;
+$font-laptop: 1rem;
+$font-desktop: 1.2rem;
+
+//borders-shadows
+$border-radius-sm: 5px;
+$border-radius-md: 10px;
+$border-radius-circle: 50%;
+
+$border-shadow-sm: 1px 1px 3px;
+$border-shadow-md: 3px 3px 7px;
+
+
+//transitions
+$transition: all .3s ease-in-out;

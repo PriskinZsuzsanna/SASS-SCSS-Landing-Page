@@ -1,0 +1,45 @@
+footer {
+    @include set-background($light-primary-color);
+    
+    h3 {
+        font-weight: 400;
+    }
+
+    .social a {
+        font-size: $font-desktop;
+        color: set-color($light-primary-color);
+        transition: $transition;
+        padding: .5rem .8rem;
+        border-radius: $border-radius-circle;
+
+        &:hover {
+            scale: 1.02;
+            border: 1px solid set-color($light-primary-color);
+            @include set-background($light-white-color)
+        }
+    }
+}
+
+
+body.dark footer {
+    @include set-dark-background($dark-primary-color);
+
+    .social a {
+        color: set-dark-color($dark-primary-color);
+        
+        &:hover {
+            border: 1px solid set-color($dark-primary-color);
+            @include set-dark-background($light-white-color)
+        }
+    }
+    /*
+    
+    a:hover i {
+        color: set-dark-color($light-white-color);
+    }
+    */
+}
+
+body.dark footer .socal a:hover  {
+    @include set-dark-background($light-white-color)
+}

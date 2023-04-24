@@ -1,0 +1,53 @@
+//colors ------------------------
+//light theme
+
+@function set-color($bgcolor) {
+    @if(lightness($bgcolor) > 70){
+        @return $light-primary-color-opace;
+    }
+    @else {
+        @return $light-white-color;
+    }
+}
+
+@mixin set-background($bgcolor) {
+
+    background-color: $bgcolor;
+    color: set-color($bgcolor)
+}
+
+//-----------------------------------
+//hero-img-theme
+
+@function set-hero-color($bgopace) {
+    @if(lightness($bgopace) > 70){
+        @return $dark-primary-color;
+    }
+    @else {
+        @return $light-white-color;
+    }
+}
+
+@mixin set-hero-background($bgopace) {
+
+    background-color: $bgopace;
+    color: set-hero-color($bgopace)
+}
+
+//-----------------------------------
+//dark-theme
+
+@function set-dark-color($bg) {
+    @if(lightness($bg) >  70){
+        @return $dark-primary-color;
+    }
+    @else {
+        @return $light-white-color;
+    }
+}
+
+@mixin set-dark-background($bg) {
+
+    background-color: $bg;
+    color: set-dark-color($bg)
+}
